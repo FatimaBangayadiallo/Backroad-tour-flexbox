@@ -257,6 +257,30 @@ About
   }
 }
 
+/* about img speudo element befor and after  */
+@media screen and (min-width: 1170px) {
+  .about-img::before {
+    content: "";
+    position: absolute;
+    /* background: red; */
+    border: 0.5rem solid var(--clr-primary-5);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: -1.5rem;
+    left: -1.5rem;
+    /* or we can use the z-index to manage whish element will be on the  top */
+    /* z-index: -1; */
+  }
+  .about-img {
+    position: relative;
+  }
+  /* we use position relative to the img class to make the img on top of the before element  */
+  .about-photo {
+    position: relative;
+  }
+}
+
 /*
 =============== 
 Services
