@@ -238,6 +238,24 @@ About
 
 /* title add to globals */
 /* section center add to globals */
+.about-img,
+.about-info {
+  margin-bottom: 2rem;
+}
+/* whe we get to 992px of the screen we pose our column layout */
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-img,
+  .about-info {
+    flex: 0 0 calc(50% - 2rem);
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
 
 /*
 =============== 
