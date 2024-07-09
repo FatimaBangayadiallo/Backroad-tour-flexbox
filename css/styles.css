@@ -237,6 +237,17 @@ Navbar
   color: var(--clr-primary-1);
   padding-left: 2.25rem;
 }
+/* to hide the link in the small screen */
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+/* 280px is the heigth of the nav-links */
+/* to show the link when we clic on the button */
+.show-links {
+  height: 280px;
+}
 
 /*
 =============== 
