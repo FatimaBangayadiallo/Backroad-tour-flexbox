@@ -249,6 +249,55 @@ Navbar
   height: 280px;
 }
 
+/* navbar on the bigger screen */
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    gap: 10px;
+  }
+  /* hide toggle buutton */
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* optional */
+    flex-wrap: wrap;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-link {
+    padding: 0 0;
+  }
+  .nav-link:hover {
+    padding: 0;
+    color: var(--clr-primary-5);
+    background-color: transparent;
+  }
+  .nav-logo {
+    padding: 0 0;
+  }
+  .nav-icons {
+    display: flex;
+    gap: 10px;
+  }
+  .nav-icon {
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+  .nav-icon:hover {
+    color: var(--clr-primary-8);
+  }
+}
+
 /*
 =============== 
 Hero
